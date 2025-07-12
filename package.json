@@ -5,11 +5,13 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "cd client && npm install && npm run build",
     "server": "nodemon server.js",
     "client": "npm start --prefix ./client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "author": "techinfoyt",
+  "author": "Abhishek Ahirwar",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
